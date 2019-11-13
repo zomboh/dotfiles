@@ -37,6 +37,11 @@ set ignorecase
 set incsearch
 set smartcase
 
+" clipboard
+if has('clipboard')
+    set clipboard=unnamed,unnamedplus
+endif
+
 " invisible chars
 set listchars=tab:▸-,trail:·,nbsp:·,space:·,extends:>,precedes:<
 set list
