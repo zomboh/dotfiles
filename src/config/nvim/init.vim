@@ -1,6 +1,7 @@
 " plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'matze/vim-move'
 
@@ -13,6 +14,7 @@ set autoread
 set autoindent
 set mouse=a
 filetype plugin on
+set updatetime=100
 
 " UI
 set cursorline
