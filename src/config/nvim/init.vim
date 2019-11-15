@@ -15,6 +15,7 @@ set autoindent
 set mouse=a
 filetype plugin on
 set updatetime=100
+let mapleader="\<Space>"
 
 " UI
 set cursorline
