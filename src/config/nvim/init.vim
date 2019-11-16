@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'danro/rename.vim'
+Plug 'duggiefresh/vim-easydir'
 Plug 'itchyny/lightline.vim'
 Plug 'matze/vim-move'
 
