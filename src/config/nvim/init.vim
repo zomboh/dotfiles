@@ -5,6 +5,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
 Plug 'duggiefresh/vim-easydir'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'matze/vim-move'
 
@@ -70,3 +71,6 @@ endfunction
 function BrightHighlightOff()
   hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#222222 gui=NONE
 endfunction
+
+" editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
