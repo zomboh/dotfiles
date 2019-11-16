@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'matze/vim-move'
 
@@ -56,3 +57,14 @@ let g:lightline = {
 set termguicolors
 syntax enable
 colorscheme monokaish
+
+" ctrlP
+let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn', 'exit':  'BrightHighlightOff', }
+
+function BrightHighlightOn()
+  hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#444444 gui=NONE
+endfunction
+
+function BrightHighlightOff()
+  hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#222222 gui=NONE
+endfunction
