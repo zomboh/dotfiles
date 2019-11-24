@@ -5,7 +5,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
 Plug 'duggiefresh/vim-easydir'
+Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'ervandew/supertab'
+Plug 'haya14busa/incsearch.vim'
+Plug 'haya14busa/incsearch-fuzzy.vim'
+Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'matze/vim-move'
 
@@ -74,3 +79,5 @@ endfunction
 
 " editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
+
+source ~/.config/nvim/mappings.vim
