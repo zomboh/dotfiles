@@ -8,6 +8,7 @@ Plug 'danro/rename.vim'
 Plug 'duggiefresh/vim-easydir'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'epmatsw/ag.vim'
 Plug 'ervandew/supertab'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
@@ -77,6 +78,23 @@ endfunction
 function BrightHighlightOff()
   hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#222222 gui=NONE
 endfunction
+
+let g:ctrlp_dont_split = 'nerdtree'
+let g:ctrlp_extensions = ['funky']
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:40'
+let g:ctrlp_max_depth = 20
+let g:ctrlp_max_files = 0
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_working_path_mode = "ra"
+let g:ctrlp_status_func = {
+    \ 'main': 'CtrlPStatusMain',
+    \ 'prog': 'CtrlPStatusProg',
+\ }
+let g:ctrlp_funky_syntax_highlight = 1
+
+" ag should be fast enough to not need to use caching
+let g:ctrlp_use_caching = 0
 
 " editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
