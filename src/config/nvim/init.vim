@@ -14,6 +14,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'jeetsukumaran/vim-buffergator'
 Plug 'matze/vim-move'
 
 call plug#end()
