@@ -10,3 +10,6 @@ map <leader>g/ <Plug>(incsearch-easymotion-stay)
 map z/ <Plug>(incsearch-fuzzy-/)
 map z? <Plug>(incsearch-fuzzy-?)
 map zg/ <Plug>(incsearch-fuzzy-stay)
+
+" Toggle line wrap
+map <M-z> :set wrap!<CR>
