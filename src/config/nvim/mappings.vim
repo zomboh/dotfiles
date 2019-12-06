@@ -13,3 +13,6 @@ map zg/ <Plug>(incsearch-fuzzy-stay)
 
 " Toggle line wrap
 map <M-z> :set wrap!<CR>
+
+" NERDtree
+map <C-n> :NERDTreeToggle<CR>

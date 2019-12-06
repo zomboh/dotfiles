@@ -16,6 +16,8 @@ Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'matze/vim-move'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
