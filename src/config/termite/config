@@ -1,3 +1,31 @@
+# vim:ft=dosini
+[options]
+allow_bold    = true
+audible_bell  = false
+clickable_url = true
+dynamic_title = true
+font          = BlexMono Nerd Font Book 11
+
+icon_name           = terminal
+mouse_autohide      = true
+scroll_on_keystroke = true
+scroll_on_output    = false
+scrollback_lines    = 10000
+search_wrap         = true
+urgent_on_bell      = true
+
+# "system", "on" or "off"
+cursor_blink = on
+
+# "block", "underline" or "ibeam"
+cursor_shape = block
+
+# set size hints for the window
+size_hints = true
+
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
 [colors]
 
 # special
