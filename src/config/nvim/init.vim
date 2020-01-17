@@ -31,6 +31,7 @@ set mouse=a
 filetype plugin on
 set updatetime=100
 let mapleader="\<Space>"
+set laststatus=2
 
 " UI
 set cursorline
@@ -65,12 +66,19 @@ set listchars=tab:▸-,trail:·,nbsp:·,space:·,extends:>,precedes:<
 set list
 
 " colors
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
+
+" This is only necessary if you use "set termguicolors".
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set t_Co=256
 set termguicolors
 syntax enable
 colorscheme monokaish
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat'
+      \ }
+
 
 " ctrlP
 let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn', 'exit':  'BrightHighlightOff', }
