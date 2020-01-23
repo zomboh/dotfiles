@@ -16,6 +16,7 @@ Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -79,7 +80,6 @@ let g:lightline = {
       \ 'colorscheme': 'wombat'
       \ }
 
-
 " ctrlP
 let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn', 'exit':  'BrightHighlightOff', }
 
@@ -110,5 +110,8 @@ let g:ctrlp_use_caching = 0
 
 " editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
+
+" emmet
+let g:user_emmet_leader_key='<C-w>'
 
 source ~/.config/nvim/mappings.vim
