@@ -4,7 +4,7 @@ allow_bold    = true
 audible_bell  = false
 clickable_url = true
 dynamic_title = true
-font          = BlexMono Nerd Font Book 11
+font          = BlexMono Nerd Font Mono Book 11
 
 icon_name           = terminal
 mouse_autohide      = true
