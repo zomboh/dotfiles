@@ -18,7 +18,7 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
