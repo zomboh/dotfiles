@@ -16,3 +16,7 @@ map <M-z> :set wrap!<CR>
 
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
+
+" Deoplete
+inoremap <expr> <C-j> ("\<C-n>")
+inoremap <expr> <C-k> ("\<C-p>")
