@@ -13,6 +13,7 @@ Plug 'ervandew/supertab'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
+Plug 'honza/vim-snippets'
 Plug 'itchyny/lightline.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'jiangmiao/auto-pairs'
@@ -20,6 +21,7 @@ Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
+Plug 'SirVer/ultisnips'
 Plug 'tomtom/tcomment_vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -68,6 +70,9 @@ endif
 set listchars=tab:▸-,trail:·,nbsp:·,space:·,extends:>,precedes:<
 set list
 
+" autocompletion
+set omnifunc=syntaxcomplete#Complete
+
 " colors
 
 " This is only necessary if you use "set termguicolors".
@@ -115,5 +120,11 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 
 " emmet
 let g:user_emmet_leader_key='<C-w>'
+
+" UltiSnips
+let g:UltiSnipsEditSplit = "vertical"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
 
 source ~/.config/nvim/mappings.vim
