@@ -18,6 +18,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'lambdalisue/suda.vim'
 Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
 Plug 'preservim/nerdcommenter'
@@ -140,5 +141,8 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 " Nerdcommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
+
+" Suda
+let g:suda_smart_edit = 1
 
 source ~/.config/nvim/mappings.vim
