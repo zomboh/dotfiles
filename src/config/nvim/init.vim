@@ -1,4 +1,4 @@
-" plugins
+" Plugins
 call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
@@ -36,7 +36,7 @@ let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
-" general stuff
+" General stuff
 set number
 set noshowmode
 set autoread
@@ -58,31 +58,31 @@ set splitbelow
 set splitright
 set previewheight=15
 
-" tabs vs spaces
+" Tabs vs spaces
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-" search
+" Search
 set hlsearch
 set ignorecase
 set incsearch
 set smartcase
 
-" clipboard
+" Clipboard
 if has('clipboard')
     set clipboard=unnamed,unnamedplus
 endif
 
-" invisible chars
+" Invisible chars
 set listchars=tab:▸-,trail:·,nbsp:·,space:·,extends:>,precedes:<
 set list
 
-" autocompletion
+" Autocompletion
 set omnifunc=syntaxcomplete#Complete
 
-" colors
+" Colors
 
 " This is only necessary if you use "set termguicolors".
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -121,13 +121,13 @@ let g:ctrlp_status_func = {
 \ }
 let g:ctrlp_funky_syntax_highlight = 1
 
-" ag should be fast enough to not need to use caching
+" Ag should be fast enough to not need to use caching
 let g:ctrlp_use_caching = 0
 
-" editorconfig
+" Editorconfig
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 
-" emmet
+" Emmet
 let g:user_emmet_leader_key='<C-w>'
 
 " UltiSnips
@@ -135,5 +135,9 @@ let g:UltiSnipsEditSplit = "vertical"
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
+
+" Nerdcommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
 
 source ~/.config/nvim/mappings.vim
