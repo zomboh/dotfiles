@@ -27,6 +27,9 @@ Plug 'SirVer/ultisnips'
 Plug 'tomtom/tcomment_vim'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" Devicons must always be the last one
+Plug 'ryanoasis/vim-devicons'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
