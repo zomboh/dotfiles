@@ -59,6 +59,7 @@ set scrolloff=1
 set sidescrolloff=5
 set showmatch
 set lazyredraw
+set ttyfast
 set splitbelow
 set splitright
 set previewheight=15
@@ -147,5 +148,8 @@ let g:NERDSpaceDelims = 1
 
 " Suda
 let g:suda_smart_edit = 1
+
+" NERDTree
+let g:NERDTreeIgnore=['node_modules']
 
 source ~/.config/nvim/mappings.vim
