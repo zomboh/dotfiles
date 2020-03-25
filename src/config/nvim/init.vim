@@ -25,6 +25,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'SirVer/ultisnips'
 Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Devicons must always be the last one
