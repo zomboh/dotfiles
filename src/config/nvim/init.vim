@@ -2,9 +2,9 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
-Plug 'blueyed/smarty.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
+Plug 'dbestevez/smarty.vim'
 Plug 'duggiefresh/vim-easydir'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
@@ -153,5 +153,8 @@ let g:suda_smart_edit = 1
 
 " NERDTree
 let g:NERDTreeIgnore=['node_modules']
+
+" Smarty
+let g:smarty_indent_block = 1
 
 source ~/.config/nvim/mappings.vim
