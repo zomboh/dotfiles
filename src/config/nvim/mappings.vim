@@ -21,8 +21,10 @@ map <C-n> :NERDTreeToggle<CR>
 inoremap <expr> <C-j> ("\<C-n>")
 inoremap <expr> <C-k> ("\<C-p>")
 
-" Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+" Function shortcuts
+nnoremap <silent> <C-h> :call WinMove('h')<CR>
+nnoremap <silent> <C-j> :call WinMove('j')<CR>
+nnoremap <silent> <C-k> :call WinMove('k')<CR>
+nnoremap <silent> <C-l> :call WinMove('l')<CR>
+nnoremap <silent> <C-z> :call ZoomToggle()<CR>
+nmap <leader>= :call Preserve("normal gg=G")<CR>

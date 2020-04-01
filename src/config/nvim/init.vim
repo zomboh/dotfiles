@@ -157,4 +157,5 @@ let g:NERDTreeIgnore=['node_modules']
 " Smarty
 let g:smarty_indent_block = 1
 
+source ~/.config/nvim/functions.vim
 source ~/.config/nvim/mappings.vim
