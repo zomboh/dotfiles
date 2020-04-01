@@ -27,6 +27,7 @@ Plug 'SirVer/ultisnips'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'wesQ3/vim-windowswap'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Devicons must always be the last one
