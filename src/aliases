@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# # Package manager
+# uname -r | grep arch > /dev/null 2>&1
+# if [ $? == 0 ]; then
+  # alias upg='sudo pacman -Syu'
+# fi
+
+alias ll='exa -lah --group-directories-first'
+alias cls='clear'
+alias mkdir='mkdir -pv'
+alias gs='git status'
+alias o='xdg-open'
+alias cat='bat'
+alias mux='tmux attach -t Z'
