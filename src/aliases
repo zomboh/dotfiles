@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # package manager
-# uname -r | grep arch > /dev/null 2>&1
-# if [ $? == 0 ]; then
-  # alias upg='sudo pacman -Syu'
-# fi
+uname -r | grep arch > /dev/null 2>&1
+if [ $? = 0 ]; then
+  alias upg='sudo pacman -Syu'
+fi
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
