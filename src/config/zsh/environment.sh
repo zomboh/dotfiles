@@ -4,8 +4,8 @@ export VISUAL=vim
 
 # Use neovim if available
 if type nvim > /dev/null; then
-    export EDITOR=nvim
-    alias vim=nvim
+  export EDITOR=nvim
+  alias vim=nvim
 fi
 
 # Language
