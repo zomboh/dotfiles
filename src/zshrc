@@ -1,9 +1,12 @@
-# Load zsh configuration
+# load zsh configuration
 for file in ~/.config/zsh/*; do
     source "$file"
 done
 
-# Aliases
+# aliases
 if [ -f ~/.aliases ]; then
   source ~/.aliases;
+fi
+if [ -f ~/.aliases_local ]; then
+  source ~/.aliases_local;
 fi
