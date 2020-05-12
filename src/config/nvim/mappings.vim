@@ -28,3 +28,14 @@ nnoremap <silent> <C-k> :call WinMove('k')<CR>
 nnoremap <silent> <C-l> :call WinMove('l')<CR>
 nnoremap <silent> <C-z> :call ZoomToggle()<CR>
 nmap <leader>= :call Preserve("normal gg=G")<CR>
+
+" Split shortcuts
+nmap         <C-w>-      :rightb new<CR>
+nmap         <C-w>\|     :vnew<CR>
+nmap         <C-w>t      :tabnew<CR>
+nmap         <C-w><C-h>  :tabprevious<CR>
+nmap         <C-w><C-l>  :tabnext<CR>
+nmap         <C-w><S-h>  :vertical res -5<CR>
+nmap         <C-w><S-j>  :res +5<CR>
+nmap         <C-w><S-k>  :res -5<CR>
+nmap         <C-w><S-l>  :vertical res +5<CR>
