@@ -5,6 +5,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
 Plug 'dbestevez/smarty.vim'
+Plug 'dense-analysis/ale'
 Plug 'duggiefresh/vim-easydir'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
@@ -21,6 +22,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'lambdalisue/suda.vim'
 Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
+Plug 'maximbaz/lightline-ale'
 Plug 'pangloss/vim-javascript'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
@@ -103,10 +105,6 @@ set termguicolors
 syntax enable
 colorscheme monokaish
 
-let g:lightline = {
-      \ 'colorscheme': 'wombat'
-      \ }
-
 " ctrlP
 let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn', 'exit':  'BrightHighlightOff', }
 
@@ -159,6 +157,38 @@ let g:NERDTreeIgnore=['node_modules']
 
 " Smarty
 let g:smarty_indent_block = 1
+
+" Lightline (+ ALE)
+let g:lightline = {
+  \ 'colorscheme': 'wombat',
+  \ 'active': {
+  \   'right': [ [ 'lineinfo' ],
+  \              [ 'percent' ],
+  \              [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok', 'fileformat', 'fileencoding', 'filetype' ] ]
+  \ }
+\ }
+
+let g:lightline.component_expand = {
+      \  'linter_checking': 'lightline#ale#checking',
+      \  'linter_infos': 'lightline#ale#infos',
+      \  'linter_warnings': 'lightline#ale#warnings',
+      \  'linter_errors': 'lightline#ale#errors',
+      \  'linter_ok': 'lightline#ale#ok',
+      \ }
+
+let g:lightline.component_type = {
+      \     'linter_checking': 'right',
+      \     'linter_infos': 'right',
+      \     'linter_warnings': 'warning',
+      \     'linter_errors': 'error',
+      \     'linter_ok': 'right',
+      \ }
+
+let g:lightline#ale#indicator_checking = "\uf110"
+let g:lightline#ale#indicator_infos = "\uf129"
+let g:lightline#ale#indicator_warnings = "\uf071"
+let g:lightline#ale#indicator_errors = "\uf05e"
+let g:lightline#ale#indicator_ok = "\uf00c"
 
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/mappings.vim
