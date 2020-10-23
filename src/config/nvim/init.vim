@@ -110,11 +110,11 @@ let g:lightline = {
 " ctrlP
 let g:ctrlp_buffer_func = { 'enter': 'BrightHighlightOn', 'exit':  'BrightHighlightOff', }
 
-function BrightHighlightOn()
+function! BrightHighlightOn()
   hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#444444 gui=NONE
 endfunction
 
-function BrightHighlightOff()
+function! BrightHighlightOff()
   hi CursorLine ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#222222 gui=NONE
 endfunction
 
