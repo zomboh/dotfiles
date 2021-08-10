@@ -59,6 +59,8 @@ if type nvim > /dev/null; then
   alias vim=nvim
 fi
 
+export PATH=$PATH:/.local/bin
+
 # aliases
 if [ -f ~/.aliases ]; then
   source ~/.aliases;
@@ -66,3 +68,4 @@ fi
 if [ -f ~/.aliases_local ]; then
   source ~/.aliases_local;
 fi
+. "$HOME/.cargo/env"
