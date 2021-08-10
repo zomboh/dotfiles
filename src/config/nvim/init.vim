@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
-Plug 'dbestevez/smarty.vim'
 Plug 'dense-analysis/ale'
 Plug 'duggiefresh/vim-easydir'
 Plug 'easymotion/vim-easymotion'
@@ -20,13 +19,12 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'lambdalisue/suda.vim'
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
 Plug 'maximbaz/lightline-ale'
-Plug 'pangloss/vim-javascript'
+" Plug 'pangloss/vim-javascript'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
-Plug 'SirVer/ultisnips'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -37,14 +35,14 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Devicons must always be the last one
 Plug 'ryanoasis/vim-devicons'
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
+" if has('nvim')
+  " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" else
+  " Plug 'Shougo/deoplete.nvim'
+  " Plug 'roxma/nvim-yarp'
+  " Plug 'roxma/vim-hug-neovim-rpc'
+" endif
+" let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
@@ -154,9 +152,6 @@ let g:suda_smart_edit = 1
 
 " NERDTree
 let g:NERDTreeIgnore=['node_modules']
-
-" Smarty
-let g:smarty_indent_block = 1
 
 " Lightline (+ ALE)
 let g:lightline = {
