@@ -6,6 +6,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'danro/rename.vim'
 " Plug 'dense-analysis/ale'
 Plug 'duggiefresh/vim-easydir'
+Plug 'cespare/vim-toml'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'epmatsw/ag.vim'
@@ -25,6 +26,7 @@ Plug 'maximbaz/lightline-ale'
 " Plug 'pangloss/vim-javascript'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
+Plug 'rust-lang/rust.vim'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -59,7 +61,7 @@ set noshowmode
 set autoread
 set autoindent
 set mouse=a
-filetype plugin on
+filetype plugin indent on
 set updatetime=100
 let mapleader="\<Space>"
 set laststatus=2
@@ -163,6 +165,9 @@ let g:lightline = {
   \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
   \ }
 \ }
+
+" Rust
+let g:rustfmt_autosave = 1
 
 " LSP stuff
 
