@@ -1,3 +1,5 @@
+# vim:ft=zsh
+
 # 10ms for key sequences
 export KEYTIMEOUT=1
 
