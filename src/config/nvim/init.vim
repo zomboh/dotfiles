@@ -10,6 +10,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'epmatsw/ag.vim'
 Plug 'ervandew/supertab'
+Plug 'glench/vim-jinja2-syntax'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
@@ -19,7 +20,7 @@ Plug 'jeetsukumaran/vim-buffergator'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'lambdalisue/suda.vim'
-" Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 Plug 'matze/vim-move'
 Plug 'maximbaz/lightline-ale'
 " Plug 'pangloss/vim-javascript'
@@ -31,6 +32,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'wesQ3/vim-windowswap'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'yorik1984/zola.nvim'
 
 " Devicons must always be the last one
 Plug 'ryanoasis/vim-devicons'
@@ -184,6 +186,9 @@ let g:lightline#ale#indicator_infos = "\uf129"
 let g:lightline#ale#indicator_warnings = "\uf071"
 let g:lightline#ale#indicator_errors = "\uf05e"
 let g:lightline#ale#indicator_ok = "\uf00c"
+
+" AutoPairs
+let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"', "`":"`", '```':'```', '"""':'"""', "'''":"'''", '{{':'}}', '{#':'#}', '{%':'%}'}
 
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/mappings.vim
