@@ -1,72 +1,76 @@
 [alias]
-    a = add
-    authors = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
-    b = branch -vv
-    c = commit
-    ca = commit --amend
-    cm = commit --message
-    changes = diff --name-status -r
-    co = checkout
-    cp = cherry-pick
-    d = diff
-    df = !git diff --name-only $(git rev-parse --abbrev-ref HEAD) $(git merge-base $(git rev-parse --abbrev-ref HEAD) $1)
-    dc = diff --cached
-    dt = difftool
-    filelog = log -u
-    fl = log -u
-    h = help
-    hide = update-index --assume-unchanged
-    unhide = update-index --no-assume-unchanged
-    unhideall= !git ls-files -v | grep '^h' | sed -e 's/h //g' | xargs git update-index --no-assume-unchanged
-    l = !git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS
-    la = !git list-aliases
-    list-aliases = !git config -l | grep alias | cut -c 7-
-    lg = log --graph --pretty=format:'%Cred%h%Creset %an -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-    p = push
-    pr = remote update --prune
-    ra = log --graph --abbrev-commit --date=relative -20 --all --pretty='format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
-    rh = reset --hard
-    s = status --short --branch
-    st = stash
-    stl = stash list
-    stp = stash pop
-    undo = reset --soft HEAD^
+  a = add
+  authors = !git log --pretty=format:%aN | sort | uniq -c | sort -rn
+  b = branch -vv
+  c = commit
+  ca = commit --amend
+  cm = commit --message
+  changes = diff --name-status -r
+  co = checkout
+  cp = cherry-pick
+  d = diff
+  df = !git diff --name-only $(git rev-parse --abbrev-ref HEAD) $(git merge-base $(git rev-parse --abbrev-ref HEAD) $1)
+  dc = diff --cached
+  dt = difftool
+  filelog = log -u
+  fl = log -u
+  h = help
+  hide = update-index --assume-unchanged
+  unhide = update-index --no-assume-unchanged
+  unhideall= !git ls-files -v | grep '^h' | sed -e 's/h //g' | xargs git update-index --no-assume-unchanged
+  l = !git log --graph --pretty='tformat:%C(yellow)%h{%C(green)%ar{%C(bold blue)%an{%C(red)%d%C(reset) %s' $* | column -t -s '{' | less -FXRS
+  la = !git list-aliases
+  list-aliases = !git config -l | grep alias | cut -c 7-
+  lg = log --graph --pretty=format:'%Cred%h%Creset %an -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  p = push
+  pr = remote update --prune
+  ra = log --graph --abbrev-commit --date=relative -20 --all --pretty='format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset'
+  rh = reset --hard
+  s = status --short --branch
+  st = stash
+  stl = stash list
+  stp = stash pop
+  undo = reset --soft HEAD^
 [color]
-    ui = true
+  ui = true
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
 [color "status"]
-    added = green
-    changed = magenta
-    untracked = red
+  added = green
+  changed = magenta
+  untracked = red
 [core]
-    excludesfile = ~/.gitignore
-    editor = nvim
-    whitespace = trailing-space,space-before-tab
+  excludesfile = ~/.gitignore
+  editor = nvim
+  whitespace = trailing-space,space-before-tab
 [diff]
-    mnemonicprefix = true
-    tool = vimdiff
+  mnemonicprefix = true
+  tool = vimdiff
 [difftool]
-    prompt = false
+  prompt = false
 [icdiff]
-    options = --line-numbers
+  options = --line-numbers
 [hooks]
-    global = $HOME/.config/githooks
+  global = $HOME/.config/githooks
 [merge]
-    log = false
-    tool = vimdiff
+  log = false
+  tool = vimdiff
 [mergetool]
-    keepBackup = false
-    prompt = false
+  keepBackup = false
+  prompt = false
 [pager]
-    color = true
+  color = true
 [pull]
-    rebase = true
+  rebase = true
 [push]
-    default = simple
+  default = simple
 [status]
-    showUntrackedFiles = all
+  showUntrackedFiles = all
+[init]
+  defaultBranch = main
+[commit]
+  verbose = true
