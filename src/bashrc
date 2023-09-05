@@ -68,4 +68,3 @@ fi
 if [ -f ~/.aliases_local ]; then
   source ~/.aliases_local;
 fi
-. "$HOME/.cargo/env"
