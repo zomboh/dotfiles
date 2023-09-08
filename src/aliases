@@ -11,7 +11,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias ll='exa -lah --group-directories-first'
+alias ll='eza -lah --group-directories-first'
 alias cls='clear'
 alias mkdir='mkdir -pv'
 alias gs='git status'
